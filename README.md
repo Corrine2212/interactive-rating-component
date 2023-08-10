@@ -23,7 +23,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 ### Links
 
 - Solution URL: https://www.frontendmentor.io/solutions/results-summary-component-using-html-and-css-tqaGhmCZ8O
-- Live page: https://corrine2212.github.io/preview-product-card-component/
+- Live page: https://corrine2212.github.io/interactive-rating-component/
 
 ## My process
 
