@@ -22,7 +22,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: https://www.frontendmentor.io/solutions/results-summary-component-using-html-and-css-tqaGhmCZ8O
+- Solution URL: https://www.frontendmentor.io/solutions/interactive-rating-component-using-html-css-and-javascript-IsmY2hBVU8
 - Live page: https://corrine2212.github.io/interactive-rating-component/
 
 ## My process
