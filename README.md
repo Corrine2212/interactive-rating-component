@@ -18,7 +18,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Screenshot
 
-![](./images/Frontend%20Mentor%20_%20Product%20preview%20card%20component.png) 
+![](./images/Frontend%20Mentor%20_%20Interactive%20rating%20component.png) 
 
 ### Links
 
