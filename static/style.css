@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+/* font-family: 'Overpass', sans-serif; */
+
+:root {
+    --clr-primary-orange: hsl(25, 97%, 53%);
+
+    --clr-neutral-800: hsl(216, 12%, 8%);
+    --clr-neutral-700: hsl(213, 25%, 12%);
+    --clr-neutral-500: hsl(216, 12%, 54%);
+    --clr-neutral-400: hsl(217, 12%, 63%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --ff-base: 'Overpass', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--ff-base);
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+}
+
+body {
+    background: var(--clr-neutral-800);
+
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 35px;
+    gap: 15px;
+    width: 410px;
+    height: 440px;
+    background: linear-gradient(hsl(213, 25%, 15%), var(--clr-neutral-700), hsl(216, 12%, 11%));
+    border-radius: 25px;
+}
+
+.card__title {
+    font-family: var(--ff-base);
+    color: var(--clr-neutral-100);
+    margin-top: 20px;
+}
+
+.card__text {
+    color: var(--clr-neutral-400);
+    font-size: 15px;
+}
+
+.card__ratings {
+    color: var(--clr-neutral-400);
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 15px;
+    font-weight: var(--fw-bold);
+    /* border: none; */
+    /* gap: 10px; */
+}
+
+.icon-wrapper {
+    background-color: hsla(213, 25%, 17%);
+    color: var(--clr-neutral-400);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: none;
+    height: 48px;
+    width: 48px;
+}
+
+.icon-wrapper:hover {
+    background-color: hsla(213, 25%, 40%);
+    color: var(--clr-neutral-100);
+    cursor: pointer;
+}
+
+.icon-wrapper:active {
+    background-color: var(--clr-primary-orange);
+    color: var(--clr-neutral-100);
+    cursor: pointer;
+}
+
+.icon-wrapper p {
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-wrapper.selected {
+    background-color: var(--clr-primary-orange);
+    color: var(--clr-neutral-100);
+}
+
+
+.card__submit-btn {
+    background-color: var(--clr-primary-orange);
+    color: var(--clr-neutral-100);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    border: none;
+    padding: .7em;
+}
+
+.card__submit-btn:hover,
+.card__submit-btn:active {
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-primary-orange);
+    cursor: pointer;
+    font-weight: var(--fw-bold);
+    border: none;
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 350px;
+        padding: 25px;
+    }
+
+    .card__title {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* thank you card stylings */
+
+.thankyou-img {
+    /* height: 30px; */
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.ty-card.hidden {
+    display: none;
+}
+
+.ty-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    gap: 20px;
+}
+
+.selected-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(213, 25%, 17%);
+    align-items: center;
+    color: var(--clr-primary-orange);
+    padding: 17px 15px 15px;
+    border-radius: 20px;
+    width: 200px;
+    line-height: 0;
+}
+
+/* attribution styling */
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+
+.attribution a {
+    color: var(--clr-primary-orange);
+}
